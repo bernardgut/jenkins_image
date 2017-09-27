@@ -3,9 +3,9 @@ FROM jenkins/jenkins:lts
 USER root
 RUN echo 2.0 > /usr/share/jenkins/ref/jenkins.install.UpgradeWizard.state
 
-RUN apt-get update 
-    && apt-cache search maven 
-    && apt-get install maven
+RUN apt-get update \
+    && apt-cache search maven \
+    && apt-get install maven \
     && maven --version
 
 USER jenkins
