@@ -12,3 +12,4 @@ htmlpublisher:latest
 ws-cleanup:latest
 testingbot:latest
 allure-jenkins-plugin:latest
+nodejs:latest
