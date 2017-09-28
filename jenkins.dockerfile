@@ -6,7 +6,7 @@ RUN echo 2.0 > /usr/share/jenkins/ref/jenkins.install.UpgradeWizard.state
 RUN apt-get update \
     && apt-cache search maven \
     && apt-get install maven \
-    && maven --version
+    && mvn --version
 
 USER jenkins
 COPY plugins.txt /usr/share/jenkins/ref/plugins.txt
